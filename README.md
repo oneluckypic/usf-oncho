@@ -34,11 +34,11 @@ This project is based on a paper by Jacob, et al. "Validation of a Remote Sensin
 * [Satellite Stereo Pipeline (S2P)](https://github.com/cmla/s2p) is a python library for extracting digital elevation models (DEMs) from pairs of triplets of satellite images.
 
 # References
-[14] Crosskey RW (1990) The Natural History of Blackflies. Chichester: John Wiley and Sons.
-[15] Thompson BH (1976) Studies on the flight range and dispersal of Simulium damnosum (Diptera: Simuliidae) in the rain-forest of Cameroon. Annals of Tropical Medicine and Parasitology 70: 343–354.
-[19] Jacob BG, Novak RJ, Toe L, Sanfo MS, Afriyie A, et al. (2012) Quasi-likelihood techniques in a logistic regression equation for identifying Simulium damnosum s.l. larval habitats intra-cluster covariates in Togo. Geospatial Information Science 15: 1–17.
-[20] Jacob BG, Novak RJ (2011) A taxonomy of unmixing algorithms using Li-Strahler geometric-optical model and other spectral endmember extraction techniques for decomposing QuickBird visible and near infra-red pixels of an Anopheles arabiensis habitat. Open Remote Sensing 4: 1–25.
-[21] Jacob BG, Griffith DA, Mwangangi JM, Gathings DG, Mbogo CB, et al. (2011) A cartographic analyses using spatial filter logistic model specifications for implementing mosquito control in Kenya. Urban Geography 32: 363–377.
+* [14] Crosskey RW (1990) The Natural History of Blackflies. Chichester: John Wiley and Sons.
+* [15] Thompson BH (1976) Studies on the flight range and dispersal of Simulium damnosum (Diptera: Simuliidae) in the rain-forest of Cameroon. Annals of Tropical Medicine and Parasitology 70: 343–354.
+* [19] Jacob BG, Novak RJ, Toe L, Sanfo MS, Afriyie A, et al. (2012) Quasi-likelihood techniques in a logistic regression equation for identifying Simulium damnosum s.l. larval habitats intra-cluster covariates in Togo. Geospatial Information Science 15: 1–17.
+* [20] Jacob BG, Novak RJ (2011) A taxonomy of unmixing algorithms using Li-Strahler geometric-optical model and other spectral endmember extraction techniques for decomposing QuickBird visible and near infra-red pixels of an Anopheles arabiensis habitat. Open Remote Sensing 4: 1–25.
+* [21] Jacob BG, Griffith DA, Mwangangi JM, Gathings DG, Mbogo CB, et al. (2011) A cartographic analyses using spatial filter logistic model specifications for implementing mosquito control in Kenya. Urban Geography 32: 363–377.
 
 # Courses
 
