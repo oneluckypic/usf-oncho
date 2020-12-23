@@ -1,0 +1,17 @@
+name: oncho
+dependencies:
+  - python>=3.7
+  - click
+  - gdal
+  - ipykernel
+  - matplotlib
+  - numpy
+  - pandas
+  - pillow
+  - pylint
+  - pytest
+  - scipy
+  - tqdm
+  - pip
+  - pip:
+    - spectral

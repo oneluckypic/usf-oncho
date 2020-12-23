@@ -33,12 +33,33 @@ This project is based on a paper by Jacob, et al. "Validation of a Remote Sensin
 
 * [Satellite Stereo Pipeline (S2P)](https://github.com/cmla/s2p) is a python library for extracting digital elevation models (DEMs) from pairs of triplets of satellite images.
 
+# Implemenation Notes
+
+## GDAL Installation
+Conda is the easiest way to get it for Python.
+Add to ~/.bashrc
+```bash
+export CPLUS_INCLUDE_PATH=/usr/include/gdal
+export C_INCLUDE_PATH=/usr/include/gdal
+```
+
+## GDAL Translate .tif to .lan (format needed for Python spatial package)
+
+```bash
+gdal_translate -of LAN Area1_Ortho_Mosaic_ColorBalance.tif Area1_Ortho_Mosaic_ColorBalance.lan
+```
+
 # References
 * [14] Crosskey RW (1990) The Natural History of Blackflies. Chichester: John Wiley and Sons.
 * [15] Thompson BH (1976) Studies on the flight range and dispersal of Simulium damnosum (Diptera: Simuliidae) in the rain-forest of Cameroon. Annals of Tropical Medicine and Parasitology 70: 343–354.
 * [19] Jacob BG, Novak RJ, Toe L, Sanfo MS, Afriyie A, et al. (2012) Quasi-likelihood techniques in a logistic regression equation for identifying Simulium damnosum s.l. larval habitats intra-cluster covariates in Togo. Geospatial Information Science 15: 1–17.
 * [20] Jacob BG, Novak RJ (2011) A taxonomy of unmixing algorithms using Li-Strahler geometric-optical model and other spectral endmember extraction techniques for decomposing QuickBird visible and near infra-red pixels of an Anopheles arabiensis habitat. Open Remote Sensing 4: 1–25.
 * [21] Jacob BG, Griffith DA, Mwangangi JM, Gathings DG, Mbogo CB, et al. (2011) A cartographic analyses using spatial filter logistic model specifications for implementing mosquito control in Kenya. Urban Geography 32: 363–377.
+
+# Deep Learning Frameworks to Consider
+
+* [Raster Vision](https://www.azavea.com/projects/raster-vision/)
+* [Solaris]()
 
 # Courses
 
