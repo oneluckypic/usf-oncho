@@ -80,8 +80,8 @@ def merge_clusters(img_class_flat, centers, clusters_list, p, theta_c):
             to_delete = np.append(to_delete, [c1, c2])
 
         #delete old clusters and their indices from the availables array
-        centers = np.delete(centers, to_delete)
-        clusters_list = np.delete(clusters_list, to_delete)
+        centers = np.delete(centers, to_delete.astype('int'))
+        clusters_list = np.delete(clusters_list, to_delete.astype('int'))
 
         #generate new indices for the new clusters
         #starting from the max index 'to_add.size' times
@@ -160,8 +160,8 @@ def split_clusters(img_flat, img_class_flat, centers, clusters_list, theta_s, th
                 new_cluster_1 = old_cluster + delta
                 new_cluster_2 = old_cluster - delta
 
-                centers = np.delete(centers, cluster)
-                clusters_list = np.delete(clusters_list, cluster)
+                centers = np.delete(centers, cluster.astype('int'))
+                clusters_list = np.delete(clusters_list, cluster.astype('int'))
 
                 centers = np.append(centers, [new_cluster_1, new_cluster_2])
                 clusters_list = np.append(clusters_list, [max_clusters_list,
@@ -232,8 +232,8 @@ def discard_clusters(img_class_flat, centers, clusters_list, theta_m):
             to_delete = np.append(to_delete, cluster)
 
     if to_delete.size:
-        new_centers = np.delete(centers, to_delete)
-        new_clusters_list = np.delete(clusters_list, to_delete)
+        new_centers = np.delete(centers, to_delete.astype('int'))
+        new_clusters_list = np.delete(clusters_list, to_delete.astype('int'))
     else:
         new_centers = centers
         new_clusters_list = clusters_list
@@ -324,7 +324,7 @@ def sort_arrays_by_first(centers, clusters_list):
     return sorted_centers, sorted_clusters_list
 
 
-def isodata_classification(img, k=15, i=100, p=4, theta_m=10, theta_s=1, theta_c=20, theta_0=0.05, max_k=5):
+def isodata_classification(img, k=5, i=100, p=4, theta_m=10, theta_s=1, theta_c=20, theta_0=0.05):
     """
     Classify a numpy 'img' using Isodata algorithm.
     Parameters: a dictionary with the following keys.
@@ -351,7 +351,7 @@ def isodata_classification(img, k=15, i=100, p=4, theta_m=10, theta_s=1, theta_c
     Returns:
             - img_class: a numpy array with the classification.
     """
-
+    max_k = k
     N, M = img.shape  # for reshaping at the end
     img_flat = img.flatten()
     clusters_list = np.arange(max_k)  # number of clusters availables
